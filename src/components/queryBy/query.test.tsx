@@ -1,18 +1,18 @@
-import { render, screen } from "@testing-library/react";
-import QueryBy from "./QueryBy";
+import { render, screen } from "@testing-library/react"
+import QueryBy from "./QueryBy"
 describe("QueryBy", () => {
   test("render login button", () => {
-    render(<QueryBy />);
+    render(<QueryBy />)
     const loginButton = screen.queryByRole("button", {
       name: "Login",
-    });
-    expect(loginButton).not.toBeInTheDocument();
-  });
+    })
+    expect(loginButton).not.toBeInTheDocument()
+  })
   test("render start learning button", () => {
-    render(<QueryBy />);
+    render(<QueryBy />)
     const startLearning = screen.getByRole("button", {
       name: "Start Learning",
-    });
-    expect(startLearning).toBeInTheDocument();
-  });
-});
+    })
+    expect(startLearning).toBeInTheDocument()
+  })
+})

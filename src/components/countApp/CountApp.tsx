@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 const CountApp = () => {
-  const [count, setcount] = useState<number>(0);
-  const [count2, setcount2] = useState<string>("0");
+  const [count, setcount] = useState<number>(0)
+  const [count2, setcount2] = useState<string>("0")
 
-  const [onchangeNumberValue, setonchangeNumberValue] = useState<string>("0");
+  const [onchangeNumberValue, setonchangeNumberValue] = useState<string>("0")
   return (
     <div>
       <h1 data-testid="counter-display">{count}</h1>
@@ -16,18 +16,18 @@ const CountApp = () => {
       <input
         type={`number`}
         onChange={(e) => {
-          setonchangeNumberValue(e.target.value);
+          setonchangeNumberValue(e.target.value)
         }}
       />
       <button
         onClick={() => {
-          setcount2(onchangeNumberValue);
+          setcount2(onchangeNumberValue)
         }}
       >
         Display
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default CountApp;
+export default CountApp

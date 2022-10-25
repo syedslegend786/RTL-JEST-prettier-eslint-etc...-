@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 const QueryBy = () => {
-  const [loginShow, setloginShow] = useState(false);
+  const [loginShow, setloginShow] = useState(false)
   const handleClick = () => {
-    setloginShow((prev) => !prev);
-  };
+    setloginShow((prev) => !prev)
+  }
   return (
     <div>
       {loginShow ? (
@@ -13,7 +13,7 @@ const QueryBy = () => {
         <button onClick={handleClick}>Start Learning</button>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default QueryBy;
+export default QueryBy

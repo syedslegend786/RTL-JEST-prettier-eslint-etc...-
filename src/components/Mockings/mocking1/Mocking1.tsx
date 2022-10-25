@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 interface IProp {
-  count: number;
-  incrementHandler: () => void;
-  decrementHandler: () => void;
+  count: number
+  incrementHandler: () => void
+  decrementHandler: () => void
 }
 const Mocking1 = ({ count, decrementHandler, incrementHandler }: IProp) => {
   return (
@@ -11,7 +11,7 @@ const Mocking1 = ({ count, decrementHandler, incrementHandler }: IProp) => {
       <button onClick={incrementHandler}>Incremment</button>
       <button onClick={decrementHandler}>Decrement</button>
     </div>
-  );
-};
+  )
+}
 
-export default Mocking1;
+export default Mocking1

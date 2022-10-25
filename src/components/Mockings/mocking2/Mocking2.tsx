@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 
 const Mocking2 = () => {
-  const [users, setusers] = useState([]);
-  const [error, seterror] = useState("");
+  const [users, setusers] = useState([])
+  const [error, seterror] = useState("")
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("https://jsonplaceholder.typicode.com/users");
-        const data = await res.json();
-        setusers(data);
+        const res = await fetch("https://jsonplaceholder.typicode.com/users")
+        const data = await res.json()
+        setusers(data)
       } catch (error: any) {
-        seterror(error.message);
+        seterror(error.message)
       }
-    };
-    fetchData();
-  }, []);
+    }
+    fetchData()
+  }, [])
   return (
     <div>
       <h1>Users</h1>
@@ -26,7 +26,7 @@ const Mocking2 = () => {
       </ul>
       <button disabled>Load</button>
     </div>
-  );
-};
+  )
+}
 
-export default Mocking2;
+export default Mocking2

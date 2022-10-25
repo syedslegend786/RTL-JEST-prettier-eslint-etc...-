@@ -1,9 +1,9 @@
-import { render, screen } from "@testing-library/react";
-import Component from "./index";
+import { render, screen } from "@testing-library/react"
+import Component from "./index"
 
 describe("apearence & disappearence", () => {
   test("render login button after 2 seconds", async () => {
-    render(<Component />);
+    render(<Component />)
     const LoginButton = await screen.findByRole(
       "button",
       {
@@ -12,7 +12,7 @@ describe("apearence & disappearence", () => {
       {
         timeout: 3000,
       }
-    );
-    expect(LoginButton).toBeInTheDocument();
-  });
-});
+    )
+    expect(LoginButton).toBeInTheDocument()
+  })
+})

@@ -1,3 +1,3 @@
 export interface ISkillsProp {
-  skills: string[];
+  skills: string[]
 }

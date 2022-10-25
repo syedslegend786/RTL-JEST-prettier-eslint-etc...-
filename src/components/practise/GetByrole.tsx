@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const GetByrole = () => {
   return (
@@ -34,7 +34,7 @@ const GetByrole = () => {
         alt="avatar"
       />
     </div>
-  );
-};
+  )
+}
 
-export default GetByrole;
+export default GetByrole
