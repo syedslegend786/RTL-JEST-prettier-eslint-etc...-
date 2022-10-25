@@ -24,6 +24,6 @@ describe("Mocking2", () => {
     )
     render(<Mocking2 />)
     const error = await screen.findByTestId("heading-error")
-    expect(error).toBeDisabled()
+    expect(error).toBeInTheDocument()
   })
 })
